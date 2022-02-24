@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: white;
+            --colorscheme-main: #ffd000;
+            --colorscheme-secondary: #ffe77e;
+            --colorscheme-tertiary: #0b0b0b;
+            --colorscheme-fourth: #242424;
+            --colorscheme-dark-border: #2b2b2b;
+            --colorscheme-dark-bg: #424242;
+            --text-color-main: black;
+            --text-color-secondary: white;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-color-main);
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            background-image: url("bg-image.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position-y: -25vh;
+        }
+
+        .container>h1 {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--colorscheme-dark-bg);
+            background-blend-mode: lighten;
+            padding: 10px;
+            margin: auto;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            width: fit-content;
+            border: 2px solid var(--colorscheme-dark-border);
+            border-radius: 30px;
+            color: var(--colorscheme-main);
+        }
+
+        .form {
+            text-align: center;
+            width: 50%;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.897);
+            border-radius: 30px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.514);
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+        }
+
+        .inputs {
+            width: 50%;
+            align-self: center;
+            margin-top: 3px;
+            margin-bottom: 20px;
+            padding: 5px;
+            padding-left: 10px;
+            border-radius: 30px;
+            border: 2.5px solid var(--colorscheme-dark-border);
+            background-color: rgb(66, 66, 66);
+            transition-duration: 1s;
+            color: white;
+        }
+
+        .inputs:hover {
+            border: 2.5px solid var(--colorscheme-main);
+        }
+
+        .inputs:focus {
+            outline: none;
+            border-color: var(--colorscheme-main);
+            background-color: var(--bg-color);
+            color: black;
+        }
+
+        .topmenu {
+            display: block;
+            margin-top: 0px;
+            padding: 10px 10px 10px 10px;
+
+            background-color: black;
+            color: var(--colorscheme-main);
+            font: size 19px;
+        }
+
+        .topmenu>p {
+            margin: 0px;
+        }
+
+        .sbm_btn {
+            align-content: center;
+            margin: auto;
+            width: 30%;
+            background-color: var(--colorscheme-main);
+            border-radius: 5px;
+            border: 2px solid var(--colorscheme-main);
+            color: var(--text-color-secondary);
+            transition-duration: 1s;
+        }
+
+        .sbm_btn:hover {
+            background-color: var(--bg-color);
+            color: var(--text-color-main);
+        }
+    </style>
+</head>
+
+<body align="center">
+    <div class="topmenu">
+        <p><b>RESILIA</b></p>
+    </div>
+
+    <div class="container">
+        <h1>Formulário de Inscrição</h1>
+        <p>2º Semestre - 2022</p>
+        <form class="form" action="">
+            <label for="">Nome completo: </label>
+            <input class="inputs" type="text" placeholder="Nome" />
+
+            <label for="">Ano de nascimento: </label>
+            <input class="inputs" type="number" placeholder="Ano" />
+
+            <label for="">CPF: </label>
+            <input class="inputs" type="number" placeholder="000.000.000-00" />
+
+            <input class="sbm_btn" type="submit">
+            <br><br>
+        </form>
+    </div>
+</body>
+
+</html>
